@@ -7,11 +7,10 @@ apples_in_basket = apples % students
 print(str(apples_in_basket) + ' apples stay in basket')
 
 # another task
-students_in_first_group = int(input('Enter the number of students in A-group'))
-students_in_second_group = int(input('Enter the number of students in B-group'))
-students_in_third_group = int(input('Enter the number of students in C-group'))
-all_students = students_in_first_group + students_in_second_group + students_in_third_group + 1
-print(f'The number of desks is {all_students // 2}')
+a_group = int(input('Enter the number of students in A-group')) + 1
+b_group = int(input('Enter the number of students in B-group')) + 1
+c_group = int(input('Enter the number of students in C-group')) + 1
+print(f'The number of desks is { a_group // 2 + b_group // 2 + c_group // 2}')
 
 
 # different another task

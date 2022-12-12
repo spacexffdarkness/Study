@@ -26,7 +26,9 @@ for i in range(lim + 1):
 
 # third task
 simple_num = int(input("Type the number: "))
-if simple_num % 1 == 0 and simple_num % simple_num == 0:
-    print('That\'s simple number')
-else:
-    print('Sorry, that\'s not simple number')
+for x in range(2, simple_num//2 + 1):
+    if simple_num % x == 0:
+        print('That\'s not simple number')
+        break
+    else:
+        print('That\'s simple number')
