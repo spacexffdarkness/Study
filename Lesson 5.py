@@ -16,11 +16,11 @@ while i <= 9:
 
 # second task
 # A
-h = int(input('Please, type the number of hight: '))
+# B
+h = int(input('Please, type the height number: '))
 for g in range(h):
-    for w in range(g):
+    for w in range(g, 0, -1):
         print('*', end=' ')
     print()
-# B
 # C
 # D
