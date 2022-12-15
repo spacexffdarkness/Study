@@ -16,33 +16,21 @@ while i <= 9:
 
 # second task
 # A
-height_a = int(input('Please, type the height number: '))
-i = 1
-
-
-# height_a = int(input('Please, type the height number: '))
-# for h in range(height_a):
-#    for e in range(h):
-#        empty = ' ' * (height_a//2)
-#        print(empty, end='')
-#    print('*')
-# print("*\t" * height_a + '*')
+h_a = int(input('Please, type the height number: '))
 
 # B
-height_b = int(input('Please, type the height number: '))
-for h in range(height_b):
-    for e in range(h):
-        empty = ' ' * (height_b//2)
-        print(empty, end='')
-    for w in range(h):
-        print('*', end='')
-    print('')
+h_b = int(input('Please, type the height number: '))
+c = 0
+for i in range(1, h_b + 1):
+    for empty in range(1, (h_b - i)+1):
+        print(end="  ")
 
-# height_a = int(input('Please, type the height number: '))
-# for i in range(1, height_a + 1):
-#    print('' * height_a, end='')
-#    print('*' * i)
-#    height_a -= 1
+    while c !=(2*i) - 1:
+        print('* ', end='')
+        c += 1
+
+    c = 0
+    print()
 # C
 
 # D
