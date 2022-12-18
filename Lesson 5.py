@@ -16,21 +16,61 @@ while i <= 9:
 
 # second task
 # A
-h_a = int(input('Please, type the height number: '))
+h_a_in = int(input('Please, type the height number of A-figure: '))
+x = 0
+if h_a_in == 1:    # That's look like a bad solution
+    h_a_in = 0
+else:
+    pass
+h_a = h_a_in - 1
 
-# B
-h_b = int(input('Please, type the height number: '))
-c = 0
-for i in range(1, h_b + 1):
-    for empty in range(1, (h_b - i)+1):
+for j in range(1, h_a + 1):
+    print(end='  ')
+    for emptiness in range(1, (h_a - j) + 1):
         print(end="  ")
 
-    while c !=(2*i) - 1:
+    while x != (2*j) - 1:
+        u = '*' + ' ' * (x * 2)
+        print(u, end=' ')
+        x += 1
+
+    print()
+
+print('* ' * (h_a * 2 + 1))
+
+
+# B
+h_b = int(input('Please, type the height number of B-figure: '))
+c = 0
+for i in range(1, h_b + 1):
+    for empty in range(1, (h_b - i) + 1):
+        print(end="  ")
+
+    while c != (2*i) - 1:
         print('* ', end='')
         c += 1
 
     c = 0
     print()
-# C
 
+
+# C  (This is not complete)
+h_c = int(input('Please, type the height number of C-figure: ')) // 2
+trian = 0
+for q in range(1, h_c + 1):
+    for e in range(1, (h_c - q) + 1):
+        print(end="  ")
+
+    while trian != (2 * q) - 1:
+        print('* ', end='')
+        trian += 1
+
+    trian = 0
+    print()
+d_t = h_c -1
+for d_q in range(h_c, 1, -1):
+    # print(" " * (d_q * 2) + '*', end="")
+    for d_e in range(d_q):
+        print('*', end='')
+    print()
 # D
