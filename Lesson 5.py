@@ -72,3 +72,19 @@ for pos2 in range(h_c - 1, 0, -1):
             print(' ', end=' ')
     print()
 # D
+h_d = int(input('Please, type the height number of D-figure: ')) // 2
+for pos_1 in range(1, h_d + 1):
+    for st_1 in range(0, h_d * 2 - pos_1 * 2):
+        print(' ', end='')
+    for sym_1 in range(pos_1 * 2 - 1):
+        print('*', end=' ')
+    print()
+for pos_2 in range(h_d - 1, 0, -1):
+    for st_2 in range(h_d * 2 - pos_2 * 2, 0, -1):
+        print(' ', end='')
+    for sym_2 in range(pos_2 * 2 - 1, 0, -1):
+        if sym_2 == 1 or sym_2 == (pos_2 * 2 - 1) or sym_2 == pos_2:
+            print('*', end=' ')
+        else:
+            print(' ', end=' ')
+    print()
