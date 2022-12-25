@@ -56,21 +56,19 @@ for i in range(1, h_b + 1):
 
 # C  (This is not complete)
 h_c = int(input('Please, type the height number of C-figure: ')) // 2
-trian = 0
-for q in range(1, h_c + 1):
-    for e in range(1, (h_c - q) + 1):
-        print(end="  ")
-
-    while trian != (2 * q) - 1:
-        print('* ', end='')
-        trian += 1
-
-    trian = 0
+for pos in range(1, h_c + 1):
+    for st in range(0, h_c * 2 - pos * 2):
+        print(' ', end='')
+    for sym in range(pos * 2 - 1):
+        print('*', end=' ')
     print()
-d_t = h_c -1
-for d_q in range(h_c, 1, -1):
-    # print(" " * (d_q * 2) + '*', end="")
-    for d_e in range(d_q):
-        print('*', end='')
+for pos2 in range(h_c - 1, 0, -1):
+    for st2 in range(h_c * 2 - pos2 * 2, 0, -1):
+        print(' ', end='')
+    for sym in range(pos2 * 2 - 1, 0, -1):
+        if sym == 1 or sym == (pos2 * 2 - 1):
+            print('*', end=' ')
+        else:
+            print(' ', end=' ')
     print()
 # D
