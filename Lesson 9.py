@@ -19,7 +19,7 @@ dict_list = [{'name': 'Danny',
               'age': 79},
 
              {'name': 'Corey',
-              'age': 32},
+              'age': 7},
 
              {'name': 'Anastasia',
               'age': 7},
@@ -46,11 +46,22 @@ for young in dict_list:
     if young['age'] == y_old[0]:
         youngest.append(young['name'])
 print(youngest)
-
 # item 'b'
 """ Создать список и поместить туда самое длинное имя. Если длина имени совпадает - поместить все такие имена."""
 
+longest_name = []
+l_name = []
+# for name in dict_list:
+    # l_name.append(name['name'])
+print(l_name)
+    # l_name = len(name['name'])
 
 
 # item 'c'
 """Посчитать среднее количество лет всех людей из начального списка."""
+num = 0
+sum_ages = 0
+for mid_age in dict_list:
+    sum_ages += mid_age['age']
+    num += 1
+print(sum_ages/num)
