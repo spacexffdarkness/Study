@@ -51,10 +51,13 @@ print(youngest)
 
 longest_name = []
 l_name = []
-# for name in dict_list:
-    # l_name.append(name['name'])
-print(l_name)
-    # l_name = len(name['name'])
+for name in dict_list:
+    l_name.append(len(name['name']))
+l_name.sort()
+for name in dict_list:
+    if len(name['name']) == l_name[len(l_name) - 1]:
+        longest_name.append(name['name'])
+print(longest_name)
 
 
 # item 'c'
